@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="MySql Partie 7">
+        <meta name="author" content="Leveque Matthieu">
+        <title>MySql Partie 7</title>
+        <!-- main core CSS -->
+        <link href="assets/css/main.css" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 bgMatt">
+                    <h1>MySql Partie 7</h1>
+                    <p><strong>Consigne</strong>:</p>
+                    <ul>
+                        <li>Exercice 1: Dans la table languages, supprimer toutes les lignes parlant de HTML.</li>
+                        <li>Exercice 2: Dans la table frameworks, modifier toutes les lignes ayant le framework Symfony par Symfony2.</li>
+                        <li>Exercice 3: Dans la table languages, modifier la ligne du langage JavaScript version 5 par la version 5.1</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">      
+                <div class="col-md-12 bgMatt">
+                    <h1>Résultat:</h1>
+                    <p>Exercice 1:</p>
+                    <ul>
+                        <li>->DELETE FROM `languages`</li>
+                        <li>->WHERE language = 'HTML';</li>
+                    </ul>
+                    <p>Exercice 2:</p>
+                     <ul>
+                        <li>->UPDATE `frameworks`</li>
+                        <li>->SET `framework`='Symfony2'</li> 
+                        <li>->WHERE `framework` = 'Symfony';</li>
+                    </ul>
+                    <p>Exercice 3:</p>
+                     <ul>
+                        <li>->UPDATE `languages`</li>
+                        <li>->SET `version`='5.1'</li>
+                        <li>->WHERE `language` = 'Javascript' AND `version`= '5';</li>
+                    </ul> 
+                </div>
+            </div>
+            <footer>
+            </footer>
+    </body>
+</html>
